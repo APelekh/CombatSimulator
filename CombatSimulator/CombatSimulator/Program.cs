@@ -347,11 +347,11 @@ In hardcore version, dragon is stronger and few new features added. You will fig
         /// <summary>
         /// Processing user's choice for hardcore version
         /// </summary>
-        /// <param name="userInpt">User's input</param>
-        static void PlayerMoveHardcore(string userInpt)
+        /// <param name="userInput">User's input</param>
+        static void PlayerMoveHardcore(string userInput)
         {
             //executes if choice was 1 (sword)
-            if (int.Parse(userInpt) == 1)
+            if (int.Parse(userInput) == 1)
             {
                 //initializing player's hit chance
                 int playerHitChance = rng.Next(1, 11);
@@ -373,7 +373,7 @@ In hardcore version, dragon is stronger and few new features added. You will fig
                 }
             }
             //executes if choice was 2 (magic)
-            else if (int.Parse(userInpt) == 2)
+            else if (int.Parse(userInput) == 2)
             {
                 //initializing random number for player's damage, decreasing enemy's HP and printing message
                 int playerHit = rng.Next(magicLowestDmg, magicHighestDmg + 1);
